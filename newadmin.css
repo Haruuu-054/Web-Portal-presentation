@@ -1,0 +1,491 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 50%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    margin: auto;
+    width: 60%;
+  }
+  .form .flex{
+    margin-top: 0px;
+  }
+  .flex #fname{
+    width: 50%;
+  }
+  .flex #lname{
+    width: 50%;
+  }
+  .title {
+    font-size: 25px;
+    color: #800000;
+    font-weight: 600;
+    position: relative;
+    left: 0px;
+  }  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid #800000;
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color:#800000;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    width: 60%;
+    position: inherit;
+    left: 270px;
+    bottom: 0px;
+    margin-top: 10px;
+  }
+  
+  .submit:hover {
+    background-color: #FABC3F;
+    color: #800000;
+    transition: 0.5s;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  .staff-form{
+    margin-top: 5px;
+    padding: 0px;
+    justify-content: center;
+  }
+#create-staff-title{
+    color: #800000;
+    font-weight: bold;
+    margin-top: 20px;
+    position: relative;
+    left: 90px;
+    font-size: 30px;
+}
+#registration-logo-img{
+    height: 3rem;
+    width: 3rem;
+}
+.registration-logo{
+    display: flex;
+    position: relative;
+    left: 30px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+#form-reminder{
+    position: relative;
+    left: 10.5rem;
+    top: 1rem;
+}
+#create-student-title{
+  color: #800000;
+    font-weight: bold;
+    margin-top: 20px;
+    position: relative;
+    left: 90px;
+    font-size: 30px;
+}
+.student-form-fill {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 50%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  margin: auto;
+  margin-top: 5rem;
+  width: 60%;
+}
+.student-form-fill .student-flex{
+  margin-top: 0px;
+}
+.student-flex #student-fname{
+  width: 50%;
+}
+.student-flex #student-lname{
+  width: 50%;
+} 
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.student-flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.student-form-fill label {
+  position: relative;
+}
+
+.student-form-fill label .student-input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid #800000;
+  border-radius: 10px;
+}
+
+.student-form-fill label .student-input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.student-form-fill label .student-input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.student-form-fill label .student-input:focus + span,.student-form-fill label .student-input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.student-form-fill label .student-input:valid + span {
+  color: green;
+}
+
+.student-submit {
+  border: none;
+  outline: none;
+  background-color:#800000;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  width: 60%;
+  position: inherit;
+  left: 270px;
+  bottom: 0px;
+  margin-top: 10px;
+}
+
+.student-submit:hover {
+  background-color: #FABC3F;
+  color: #800000;
+  transition: 0.5s;
+}
+
+table {
+  width: 95%;
+  border-collapse: collapse;
+  padding: 10px;
+  margin: auto;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th{
+  background-color: #800000;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+}
+td{
+  color: black
+}
+#register-student{
+  color: white;
+  background-color: #800000;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: none;
+  position: absolute;
+  right: 16rem;
+  border-radius: 5px;
+}
+#delete-student{
+  color: white;
+  background-color: #800000;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: none;
+  position: absolute;
+  right: 3.4rem;
+  border-radius: 5px;
+}
+#delete-staff{
+  color: white;
+  background-color: #800000;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: none;
+  position: absolute;
+  right: 3.1rem;
+  border-radius: 5px;
+}
+#ledger-manage{
+  color: white;
+  background-color: #800000;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: none;
+  position: absolute;
+  right: 3.1rem;
+  border-radius: 5px;
+}
+.create-transaction{
+  margin-top: 2rem;
+  position: absolute;
+  right: 3rem;
+}
+.modal-header{
+background-image: linear-gradient(to right, #800000, #FABC3F);
+}
+.modal-dialog{
+  width: 100%;
+}
+.modal-title{
+  color: white;
+  font-size: 12px;
+}
+.modal-body label{
+  color: black;
+  font-size: 14px;
+}
+.modal-body input{
+  border: 1px solid #800000;
+}
+textarea{
+  border: 1px solid #800000;
+}
+.modal-footer{
+  background-color: #800000;
+}
+
+#transaction{
+  padding: 1rem;
+  width: 100%;
+}
+#transaction:hover{
+  background-color: #FABC3F;
+  color: #800000;
+}
+#create-student{
+  padding: 1rem;
+  margin-top: 1rem;
+  position: absolute;
+  right: 3rem;
+}
+#student-form-image{
+  height: 10rem;
+  justify-content: center;
+  padding: 10px;
+  margin: auto;
+  margin-left: 7rem;
+  width: 50%;
+}
+.transact{
+  width: 95.5%;
+  height: 3rem;
+  background-image: linear-gradient(to right, #800000, #FABC3F);
+  border: none;
+  margin: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transact-form{
+  font-size: 20px;
+  font-weight: bold;
+}
+#transact-title{
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 0.8rem;
+}
+
+.grid-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 60% 40%; /* 60% for the left, 40% for the right */
+  margin-top: 28rem;
+  height: 300px;
+}
+
+.left {
+  background-color: #f0f0f0; /* Light gray background for the left side */
+  padding: 20px;
+  width: 1330px;
+  border-radius: 10px;
+}
+
+.right {
+  background-color: #d0d0d0; /* Slightly darker gray for the right side */
+  padding: 20px;
+  border-radius: 10px;
+}
+.payment-form-title{
+  color: #800000;
+  margin-right: 3rem;
+  margin-top: 0.5rem;
+}
+/* Ledger Container */
+.ledger-container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 0px;
+  margin-left: 6rem;
+}
+
+/* Ledger Card */
+.ledger-card {
+  width: 620px;
+  background: white;
+  border: 1px solid #800000;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+#description{
+  width: 100%;
+}
+.submit-transaction-btn{
+  background-color: #800000;
+  color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+#date{
+  margin-right: 2rem;
+  height: 2rem;
+}
+.transactions-container{
+  margin-top: 2rem;
+}
+#new-transact{
+  position: absolute;
+  margin-left: 2.6rem;
+  background-color: #800000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+.ledger-form-container, .student-transactions-container {
+  margin-top: 2rem;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(15, 15, 15, 0.1);
+}
+.ledger-form-container input, .ledger-form-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #4e4e4e;
+  border-radius: 4px;
+}
+.ledger-form-container button {
+  background-color: #800000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ledger-form-container button:hover {
+  background-color: #FABC3F;
+  color: #800000;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #800000;
+  text-align: center;
+}
+#users{
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 95%;
+}
+#content{
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 95%;
+}

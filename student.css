@@ -1,0 +1,155 @@
+body{
+    margin-top:20px;
+}
+.navbar .container-fluid .navbar-brand{
+    font-weight: bold;
+    color: maroon;
+}
+#logo{
+    height: 3rem;
+}
+.sticky-top{
+    position: relative;
+}
+.sticky-top .navbar .container-fluid{
+    background-color: white;
+    padding: 1rem;
+}.sticky-top .navbar .container-fluid a{
+    color: #800000;
+}
+.sticky-top .navbar{
+    background-image: linear-gradient(to right, #800000, #FABC3F);
+}
+.sticky-top .navbar .navbar-brand{
+    color: white;
+}
+.navbar .container-fluid{
+    text-align: center;
+    justify-content: center;
+}
+.container{
+    margin-top: 17rem;
+    border-radius: 21px;
+    background: #ffffff;
+    box-shadow:  16px 16px 100px #848484,-16px -16px 100px #ffffff;
+}
+.account-block {
+    padding: 1rem;
+    background-image: url(images/School_cut.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+.account-block .account-testimonial {
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+}
+.text-theme {
+    color: #800000 !important;
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient( #800000, #FABC3F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-theme {
+    background: linear-gradient( #800000, #FABC3F);
+    color: #fff;
+    width: 10rem;
+    margin-right: 1rem;
+}
+.btn-theme:hover{
+    background-color: #ffffff;
+    background: linear-gradient( #800000, #FABC3F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-color: #800000;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Grade Table Wrapper */
+  .grade-table {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Grade Table Title */
+  .grade-table__title {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Data Section */
+  .grade-table__data {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Right Section - Column Names */
+  .grade-table__right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grade-table__right .item {
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  /* Left Section - Data Types */
+  .grade-table__left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grade-table__left .item {
+    padding: 10px;
+    font-weight: normal;
+    color: #333;
+    background-color: #fff;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  /* Item Styling */
+  .item {
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Hover Effects for Item */
+  .grade-table__right .item:hover,
+  .grade-table__left .item:hover {
+    background-color: #e2e2e2;
+    cursor: pointer;
+  }
+  
+
+

@@ -1,0 +1,658 @@
+:root {
+    --blue: #800000;
+    --white: #fff;
+
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    --font-family: cursive;
+}
+
+navbar .container-fluid .navbar-brand{
+    font-weight: bold;
+    color: maroon;
+}
+#logo{
+    height: 3rem;
+}
+.sticky-top{
+    position: relative;
+}
+.sticky-top .navbar .container-fluid{
+    background-color: white;
+    padding: 1rem;
+}.sticky-top .navbar .container-fluid a{
+    color: #800000;
+}
+.sticky-top .navbar{
+    background-image: linear-gradient(to right, #800000, #FABC3F);
+}
+.sticky-top .navbar .navbar-brand{
+    color: white;
+    padding-left: 1rem;
+}
+.navbar .container-fluid{
+    text-align: center;
+    justify-content: center;
+}
+.sidebar{
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #800000;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    color: white;
+    /* margin-top: 9.3rem; */
+}
+.sidebar #school_logo{
+    border-radius: 50%;
+    margin-top: 3rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    display: block;
+    margin: 2rem auto 2rem auto;
+}
+.sidebar .wrapper ul li a{
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.wrapper ul li a{
+    text-decoration: none;
+}
+.sidebar .active{
+    background-image: linear-gradient(to right,  #800000, #FABC3F);
+    color: white;
+    display: block;
+}
+.sidebutton {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+    
+.sidebutton li {
+    margin-right: 10px; /* Space between list items */
+}
+    
+.sidebutton a {
+    text-decoration: none; /* Remove text decoration */
+    color: inherit; /* Use inherited color */
+}
+
+.sidebutton a i {
+    margin-right: 8px; /* Space between icon and text */
+}
+/* .sidebar a:hover:not(.active){
+    background-color: #800000;
+    color: white;
+} */
+ /* .sidebar #account_icon{
+    margin-right: 1rem;
+ }
+ .sidebar #Ledger_management{
+    margin-right: 1rem;
+ }
+ .sidebar #Admin_profile{
+    margin-right: 1rem;
+ }
+ .sidebar #dashboard{
+    margin-right: 1rem;
+ } */
+.content{
+    margin-top: 9.5rem;
+    margin-left: 300px;
+    padding: 1px 16px;
+    height: 1000px;
+    flex-grow: 1;
+    display: none;
+}
+#dashboard{
+    display: block;
+}
+@media screen and (max-width:700px) {
+    .sidebar{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a{float: left;}
+    .content {margin-left: 0;}
+}
+@media screen and (max-width:400px){
+    .sidebar a{
+        text-align: center;
+        float: none;
+    }
+}
+.sidebar a:hover{
+    background-color: #5f0505;
+}
+.carousel{
+    margin-top: 1.5rem;
+}
+.content h2{
+    font-weight: bold;
+    background: linear-gradient( #800000, #FABC3F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content .carousel{
+    margin: 1rem;
+}
+.content .container .row .col-8{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+hr{
+    width: 80%;
+    height: 0.5rem;
+    color: #800000;
+    background-color: #800000;
+}
+.col-8 p{
+    background-color: #800000;
+    color: white;
+    padding: 2rem;
+    margin: 5px;
+    border-radius: 2rem;
+}
+.col-4 p{
+    color: #800000;
+    font-style: italic;
+    padding: 1.5rem;
+}
+/* From Uiverse.io by gharsh11032000 */ 
+.card {
+    width: 100%;
+    height: 60px;
+    background-color: #4158D0;
+    background: linear-gradient(to right, #800000, #FABC3F);
+    border-radius: 8px;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card-context {
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+  
+  .card-context .card-title {
+    font-size: 20px;
+    color: inherit;
+  }
+#last-news{
+    color: #800000;
+    text-align: center;
+    justify-content: center;
+}
+#hr2{
+    width: 100%;
+    height: 0.5rem;
+    color: #800000;
+    background-color: #800000;
+}
+.calendar{
+    height: 300px;
+    font-size: 14px;
+    width: 250px;
+    margin: 1.2rem;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.calendar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #800000;
+    padding: 10px;
+}
+.calendar-body{
+    padding: 2px;
+}
+.calendar-week-day{
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    color: #7F7F7F;
+}
+.calendar-week-day div{
+    display: grid;
+    place-items: center;
+}
+.calendar-days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    color: #800000;
+}
+.calendar-days div{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+}
+.calendar-days div span {
+    position: absolute;
+}
+
+.calendar-days div:hover span {
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.calendar-days div span:nth-child(1),
+.calendar-days div span:nth-child(3) {
+    width: 2px;
+    height: 0;
+    background-color: var(--color-txt);
+}
+
+.calendar-days div:hover span:nth-child(1),
+.calendar-days div:hover span:nth-child(3) {
+    height: 100%;
+}
+
+.calendar-days div span:nth-child(1) {
+    bottom: 0;
+    left: 0;
+}
+
+.calendar-days div span:nth-child(3) {
+    top: 0;
+    right: 0;
+}
+
+.calendar-days div span:nth-child(2),
+.calendar-days div span:nth-child(4) {
+    width: 0;
+    height: 2px;
+    background-color: var(--color-txt);
+}
+
+.calendar-days div:hover span:nth-child(2),
+.calendar-days div:hover span:nth-child(4) {
+    width: 100%;
+}
+
+.calendar-days div span:nth-child(2) {
+    top: 0;
+    left: 0;
+}
+
+.calendar-days div span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+
+.calendar-days div:hover span:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.calendar-days div:hover span:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.calendar-days div:hover span:nth-child(4) {
+    transition-delay: 0.6s;
+}
+
+.calendar-days div.curr-date,
+.calendar-days div.curr-date:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.calendar-days div.curr-date span {
+    display: none;
+}
+
+.month-picker {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.month-picker:hover {
+    background-color: var(--color-hover);
+}
+
+.year-picker {
+    display: flex;
+    align-items: center;
+}
+
+.year-change {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.year-change:hover {
+    background-color: var(--color-hover);
+}
+
+.month-list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-main);
+    padding: 20px;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+    display: grid;
+    transform: scale(1.5);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.month-list.show {
+    transform: scale(1);
+    visibility: visible;
+    pointer-events: visible;
+    transition: all 0.2s ease-in-out;
+}
+
+.month-list > div {
+    display: grid;
+    place-items: center;
+}
+
+.month-list > div > div {
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--color-txt);
+}
+
+.month-list > div > div:hover {
+    background-color: var(--color-hover);
+}
+
+@keyframes to-top {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+#account-management .account-container{
+    background-color: #D9D9D9;
+    height: 900px;
+    width: 95%;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    border-radius: 1.5rem;
+}
+.account-container .btn-group{
+    margin: 2rem;
+    width: 25%;
+    height: 3rem;
+}
+.btn{
+    background-color: #800000;
+    border: none;
+    border: 1px solid white;
+}
+.btn:hover{
+    background-color: #FABC3F;
+    color: #800000;
+    border: 1px solid #800000;
+}
+.account-management-content{
+    background-color: white;
+    height: 700px;
+    width: 95%;
+    flex: grow;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin: auto;
+}
+.management-content #placeholder{
+    margin-top: 20px;
+}
+.management-content h2{
+    text-align: center;
+    justify-content: center;
+    padding: 3rem;
+}
+.management-content #placeholder{
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    color: #800000;
+    font-style: italic;
+}
+.searchbar .navbar{
+    background-image: linear-gradient(to right, #800000, #FABC3F);
+    margin-top: 5rem;
+    margin: 2rem;
+    position: relative;
+    height: 3rem;
+    width: 95%;
+}
+.searchbar .navbar .d-flex{
+    position: absolute;
+    right: 1rem;
+    width: 60%;
+}
+.searchbar .btn{
+    background-color: #800000;
+    color:white;
+    border: 1px solid white;
+}
+/* From Uiverse.io by andrew-demchenk0 */ 
+.card-profile {
+    --main-color: #800000;
+    --submain-color: #ccc;
+    --bg-color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: white;
+    border: 1px solid #800000;
+    margin-top: 2rem;
+  }
+  
+  .card__img {
+    height: 192px;
+    width: 100%;
+  }
+  
+  .card__img svg {
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .card__avatar {
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    background: #800000;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: calc(50% - 57px);
+  }
+  
+  .card__avatar svg {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .card__title {
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--main-color);
+  }
+  
+  .card__subtitle {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #800000;
+  }
+.profile-about{
+    margin-top: 2rem;
+    background-color: white;
+    height: 200px;
+    width: 100%;
+    border: 1px solid #800000;
+}
+.profile-about .about-content{
+    padding: 3rem;
+}
+.account-container{
+    padding: 20px;
+    border: 1px solid #800000;
+    border-radius: 5px;
+    margin: auto;
+}
+.admin-profile{
+    margin-top: 20px;
+    padding: 3rem;
+    border: 1px solid #800000;
+    display: none;
+    border-radius: 10px;
+}
+.button-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+}
+#button1{
+    width: 10rem;
+    color: white;
+    background-color: #800000;
+    border: solid 1px white;    
+    border-radius: 5px;
+}
+#button1:hover{
+    background-image: linear-gradient(to right, #800000, #FABC3F);
+    color: white;
+    border: 1px solid #800000;
+
+}
+#button2{
+    width: 10rem;
+    background-color: #FABC3F;
+    color: #800000;
+    border: none;
+    border-radius: 5px;
+}
+#button2:hover{
+    background-image: linear-gradient(to right, #800000, #FABC3F);
+    color: white;
+    border: 1px solid white;
+}
+#log-out{
+    margin-top: 1rem;
+    margin-left: 87em;
+    width: 10rem;
+    color: white;
+    background-color: #800000;
+    border: solid 1px #800000;
+    border-radius: 5px;
+}
+#log-out:hover{
+    background-image: linear-gradient(to right, #800000, #FABC3F);
+    color: white;
+    border: 1px solid #800000;
+}
+.admin-profile p{
+    font-style: italic;
+}
+#staff-button {
+    padding: 20px;
+    position:relative;
+}
+#create_staff{
+    background-color: white;
+    color: #800000;
+    border: none;
+    font-weight: bold;
+}
+#delete_staff{
+    background-color: white;
+    color: #800000;
+    border: none;
+    font-weight: bold;
+}
+#create-student-account{
+    background-color: white;
+    color: #800000;
+    border: none;
+    font-weight: bold;
+}
+#delete-student-account{
+    background-color: white;
+    color: #800000;
+    border: none;
+    font-weight: bold;
+}
+#student-button{
+    padding: 20px;
+    position: relative;
+}
+
+
+
+
